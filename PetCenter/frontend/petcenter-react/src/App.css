@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+h5 {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal
+}
+
+.hero img {
+    width: 80%;
+}
+
+.services {
+    background-color: rgb(217, 217, 251) !important;
+}
+
+.services img {
+    width: 60%;
+}
+
+.text-services {
+    color: rgb(170, 170, 249);
+    text-shadow: rgb(214, 211, 211) 1px 0 10px;
+}
+
+.bi-plus {
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.bi-plus:hover {
+    transform: scale(1.2);
+}
+
+.cont {
+    height: 100dvh;
+}
+
+.wiggle {
+    animation: wiggle 2s linear infinite;
+}
+
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+.constantWiggle {
+  animation: constantWiggle 0.5s linear infinite;
+}
+
+  @keyframes constantWiggle {
+    0% {
+      transform: rotateZ(1deg);
+    }
+    20% {
+      transform: rotateZ(-1deg);
+    }
+    40% {
+      transform: rotateZ(1deg);
+    }
+    60% {
+      transform: rotateZ(-1deg);
+    }
+    100% {
+      transform: rotateZ(1deg);
+    }
+  }
+
+.delete, .edit {
+  user-select: none;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: rgb(241, 241, 239) !important;
+}
+
+.edit:hover {
+  background-color: rgb(241, 241, 239) !important;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.card-img-top {
+  border-radius: 30%;
+}
